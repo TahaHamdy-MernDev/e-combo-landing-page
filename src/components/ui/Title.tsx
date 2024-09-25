@@ -12,8 +12,8 @@ const Title: React.FC<TitleProps> = ({
   titleColor = "text-secondary",
 }) => {
   return (
-    <div className="text-center flex flex-col items-center ">
-      <h3 className={`text-3xl font-medium ${titleColor}`}>{title}</h3>
+    <div className="text-center flex flex-col items-center my-10">
+      <h3 className={`text-3xl md:text-4xl font-medium ${titleColor}`}>{title}</h3>
       <p className="mt-6 md:max-w-[750px] text-lg font-medium px-2">{description}</p>
     </div>
   );
