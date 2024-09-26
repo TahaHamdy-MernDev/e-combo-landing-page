@@ -4,6 +4,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   @apply bg-white text-textBase;
 }
 

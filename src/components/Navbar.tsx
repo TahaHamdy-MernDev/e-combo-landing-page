@@ -45,25 +45,25 @@ const Navbar = () => {
       
         <div className=" hidden md:flex gap-3 justify-center items-center">
           <Link
-            href="#"
+            href="#about"
             className="text-textBase text-xl  hover:text-secondary transition"
           >
             عن ايكومبو
           </Link>
           <Link
-            href="#"
+            href="#why"
             className="text-textBase text-xl  hover:text-secondary transition"
           >
             لماذا ايكومبو
           </Link>
           <Link
-            href="#"
+            href="#how"
             className="text-textBase text-xl  hover:text-secondary transition"
           >
             كيف تبدأ
           </Link>
           <Link
-            href="#"
+            href="#common-questions"
             className="text-textBase text-xl  hover:text-secondary transition"
           >
             الاسئلة الشائعة
