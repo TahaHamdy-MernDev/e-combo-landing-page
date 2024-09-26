@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "./ui/Button";
 export default function About() {
   return (
-    <section className="py-10">
+    <section className="py-10" id="about">
       <Title
         title="عن ايكومبو"
         titleColor="text-primary"

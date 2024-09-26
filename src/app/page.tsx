@@ -1,7 +1,10 @@
 import About from "@/components/About";
+import CommonQuestions from "@/components/CommonQuestions";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MarketerSolution from "@/components/MarketerSolution";
 import Navbar from "@/components/Navbar";
+import Says from "@/components/Says";
 import SupplierSolution from "@/components/SupplierSolution";
 import Where from "@/components/Where";
 import Why from "@/components/Why";
@@ -16,9 +19,12 @@ export default function Home() {
         <About />
         <Why />
         <MarketerSolution />
-        <SupplierSolution/>
-        <Where/>
+        <SupplierSolution />
+        <Where />
+        <CommonQuestions />
+        <Says />
       </main>
+      <Footer />
     </React.Fragment>
   );
 }

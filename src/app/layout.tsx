@@ -8,6 +8,7 @@ const abeeZee = localFont({
   weight: "400",
 });
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ecompo.com"),
   title: "ايكومبو - شريك التجارة الإلكترونية بالجملة",
   description:
     "تساعدك ايكومبو في بدء تجارتك الإلكترونية بسعر الجملة وبدون رأس مال. نحن نوفر المنتجات والتخزين والتغليف والشحن لدعم متجرك الإلكتروني.",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://ecompo.com",
     images: [
       {
-        url: "/images/ecompo-og-image.jpg", 
+        url: "/images/ecompo-og-image.jpg", // relative URL for OG image
         width: 1200,
         height: 630,
         alt: "ايكومبو - ابدأ تجارتك الإلكترونية",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     title: "ايكومبو - شريك التجارة الإلكترونية بالجملة",
     description:
       "ابدأ تجارتك الإلكترونية بسعر الجملة وبدون رأس مال. نحن نوفر المنتجات، التخزين، التغليف، والشحن.",
-    images: "/images/ecompo-twitter-image.jpg",
+    images: "/images/ecompo-twitter-image.jpg", // relative URL for Twitter image
   },
   icons: {
     icon: "/favicon.ico",

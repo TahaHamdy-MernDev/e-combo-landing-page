@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Why() {
   return (
-    <section className="py-10">
+    <section className="py-10" id="why">
       <Title title="لماذا ايكومبو ؟" />
       <div className="container mt-5  rounded-lg ">
         <div className="bg-[#f3a837]/10 p-4 rounded-lg flex flex-col md:flex-row justify-between items-center gap-4 py-5">

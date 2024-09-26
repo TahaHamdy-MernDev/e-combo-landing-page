@@ -27,7 +27,7 @@ export default function SupplierSolution() {
         description="لأن للتجارة أصول نقدم لك حلول عملية"
       />
       <div className="container mt-5">
-        <div className="flex items-center justify-between flex-wrap md:flex-nowrap  gap-5">
+        <div className="flex items-center justify-center flex-wrap md:flex-nowrap  gap-5">
           {data.map((item, idx) => {
             const middle = idx === 1;
             return (
