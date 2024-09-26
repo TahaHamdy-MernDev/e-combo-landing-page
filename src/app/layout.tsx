@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
-// const abeeZee = ABeeZee({
-//   variable: "--font-abee-zee",
-//   weight: "400",
-//   subsets: ["latin"],
-// });
 
 const abeeZee = localFont({
   src: "./fonts/ABeeZee-Regular.ttf",
@@ -27,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://ecompo.com",
     images: [
       {
-        url: "/images/ecompo-og-image.jpg", // example image for social sharing
+        url: "/images/ecompo-og-image.jpg", 
         width: 1200,
         height: 630,
         alt: "ايكومبو - ابدأ تجارتك الإلكترونية",
@@ -36,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ecompo", // replace with your Twitter handle
+    site: "@ecompo",
     title: "ايكومبو - شريك التجارة الإلكترونية بالجملة",
     description:
       "ابدأ تجارتك الإلكترونية بسعر الجملة وبدون رأس مال. نحن نوفر المنتجات، التخزين، التغليف، والشحن.",
