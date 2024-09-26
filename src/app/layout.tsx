@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-
 const abeeZee = localFont({
-  src: "./fonts/ABeeZee-Regular.ttf",
+  src: "./fonts/DINNextLTArabic-Regular.ttf",
   variable: "--font-abee-zee",
   weight: "400",
 });
+
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://ecompo.com"),
   title: "ايكومبو - شريك التجارة الإلكترونية بالجملة",

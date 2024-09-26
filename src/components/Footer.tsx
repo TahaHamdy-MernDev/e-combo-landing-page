@@ -13,7 +13,7 @@ export default function Footer() {
         />
         <div className="mt-4 flex flex-col md:flex-row gap-8 items-start">
           <div className="md:w-1/2">
-            <p className=" text-start">
+            <p className="text-start" data-aos="fade-up">
               ايكومبو هي اول وأكبر منصة خدمية للتجارة الإلكترونية في الامارات
               وهي مستودعك الإلكتروني, لتأسيس مشروعك التجاري بسهولة بدون رأس مال
               , كل ماتحتاجه هو أن تبدأ مشروعك ونحن سنقوم بدعمك وبتوفير المنتجات
@@ -24,48 +24,104 @@ export default function Footer() {
           </div>
           <div className="md:w-1/2 flex items-center justify-evenly md:justify-start  gap-4 ">
             <div className="w-1/2 flex flex-col gap-3 items-center justify-start">
-              <a href="http://" target="_blank">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+              >
                 سجل كمورد
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 سجل كمسوق
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 تواصل معنا
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 الشروط والأحكام
               </a>
             </div>
             <div className="w-1/2 flex items-center justify-evenly md:justify-start flex-col gap-3">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+              >
                 كيف تبدأ
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 فروعنا
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 الأسئلة الشائعة
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 خدماتنا
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-6 flex items-center  justify-center md:justify-start  gap-4">
+        <div className="mt-4 flex items-center  justify-center md:justify-start  gap-4">
           <Image
             src={"/images/facebook.png"}
-            alt="face-book"
+            alt="facebook"
             width={35}
             height={35}
+            data-aos="fade-in"
           />
-          <Image src={"/images/insta.png"} alt="insta" width={35} height={35} />
+          <Image
+            src={"/images/insta.png"}
+            alt="instagram"
+            width={35}
+            height={35}
+            data-aos="fade-in"
+            data-aos-delay="100"
+          />
           <Image
             src={"/images/twitter.png"}
             alt="twitter"
             width={35}
             height={35}
+            data-aos="fade-in"
+            data-aos-delay="200"
           />
         </div>
       </div>

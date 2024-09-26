@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "./ui/Button";
 export default function About() {
   return (
-    <section className="py-10" id="about">
+    <section className="py-10" id="about" data-aos="fade-up">
       <Title
         title="عن ايكومبو"
         titleColor="text-primary"
@@ -12,36 +12,91 @@ export default function About() {
       />
       <div className="container mt-6">
         <div className="mt-8 flex flex-col md:flex-row-reverse gap-2 items-center justify-between">
-          <div className="md:w-1/2 p-2  md:p-8">
+          
+          {/* Supplier Section */}
+          <div
+            className="md:w-1/2 p-2 md:p-8"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <div className="bg-[#59C6C91C] p-4 md:p-8 rounded-lg flex flex-col gap-2 items-center justify-center">
+              
               <Image
                 src="/images/supplier.png"
                 alt="supplier"
                 width={80}
                 height={80}
+                data-aos="zoom-in"
+                data-aos-delay="300"
               />
-              <h4 className=" text-3xl font-normal text-secondary">المورد</h4>
-              <p className=" text-xl max-w-[70%] text-center">
-                التسجيل كمورد يمنحك مزايا في استخدام مستودعاتنا وحقوق التسويق{" "}
+              
+              <h4
+                className="text-3xl font-normal text-secondary"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                المورد
+              </h4>
+              
+              <p
+                className="text-xl max-w-[70%] text-center"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                التسجيل كمورد يمنحك مزايا في استخدام مستودعاتنا وحقوق التسويق
               </p>
-              <Button className="mt-2" variant="secondary">
+              
+              <Button
+                className="mt-2"
+                variant="secondary"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
                 سجل كمورد
               </Button>
             </div>
           </div>
-          <div className="md:w-1/2 p-2  md:p-8">
-            <div className="bg-[#F3A8371C] p-4  md:p-8 rounded-lg flex flex-col gap-2 items-center justify-center">
+
+          {/* Marketer Section */}
+          <div
+            className="md:w-1/2 p-2 md:p-8"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div className="bg-[#F3A8371C] p-4 md:p-8 rounded-lg flex flex-col gap-2 items-center justify-center">
+              
               <Image
                 src="/images/marketer.png"
                 alt="marketer"
                 width={80}
                 height={80}
+                data-aos="zoom-in"
+                data-aos-delay="300"
               />
-              <h4 className=" text-3xl font-normal text-secondary">المسوق</h4>
-              <p className=" text-xl max-w-[70%] text-center">
+              
+              <h4
+                className="text-3xl font-normal text-secondary"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                المسوق
+              </h4>
+              
+              <p
+                className="text-xl max-w-[70%] text-center"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 التسجيل كمسوق يمنحك مزايا في استخدام مستودعاتنا وحقوق التسويق
               </p>
-              <Button className="mt-2">سجل كمسوق</Button>
+              
+              <Button
+                className="mt-2"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                سجل كمسوق
+              </Button>
             </div>
           </div>
         </div>

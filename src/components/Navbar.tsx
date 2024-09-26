@@ -11,12 +11,11 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center" data-aos="fade-down">
           <Image src={logo} alt="ايكومبو" width={150} height={60} />
         </div>
 
@@ -25,6 +24,8 @@ const Navbar = () => {
           className="md:hidden cursor-pointer"
           onClick={toggleSidebar}
           aria-label="Toggle sidebar"
+          data-aos="fade-down"
+          data-aos-delay="100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,37 +43,46 @@ const Navbar = () => {
           </svg>
         </button>
 
-      
-        <div className=" hidden md:flex gap-3 justify-center items-center">
+        <div className="hidden md:flex gap-3 justify-center items-center">
           <Link
             href="#about"
-            className="text-textBase text-xl  hover:text-secondary transition"
+            className="text-textBase text-xl hover:text-secondary transition"
+            data-aos="fade-down"
+            data-aos-delay="200"
           >
             عن ايكومبو
           </Link>
           <Link
             href="#why"
-            className="text-textBase text-xl  hover:text-secondary transition"
+            className="text-textBase text-xl hover:text-secondary transition"
+            data-aos="fade-down"
+            data-aos-delay="300"
           >
             لماذا ايكومبو
           </Link>
           <Link
             href="#how"
-            className="text-textBase text-xl  hover:text-secondary transition"
+            className="text-textBase text-xl hover:text-secondary transition"
+            data-aos="fade-down"
+            data-aos-delay="400"
           >
             كيف تبدأ
           </Link>
           <Link
             href="#common-questions"
-            className="text-textBase text-xl  hover:text-secondary transition"
+            className="text-textBase text-xl hover:text-secondary transition"
+            data-aos="fade-down"
+            data-aos-delay="500"
           >
             الاسئلة الشائعة
           </Link>
           <Link
             href="#"
-            className="text-textBase text-xl  hover:text-secondary transition"
+            className="text-textBase text-xl hover:text-secondary transition"
           >
-            <Button>تسجيل دخول</Button>
+            <Button data-aos="fade-down" data-aos-delay="600">
+              تسجيل دخول
+            </Button>
           </Link>
         </div>
       </div>
@@ -119,30 +129,39 @@ const Navbar = () => {
               <Link
                 href="#"
                 className="text-text hover:text-secondary transition"
+                data-aos="fade-up"
               >
                 عن ايكومبو
               </Link>
               <Link
                 href="#"
                 className="text-text hover:text-secondary transition"
+                data-aos="fade-up"
+                data-aos-delay="100"
               >
                 لماذا ايكومبو
               </Link>
               <Link
                 href="#"
                 className="text-text hover:text-secondary transition"
+                data-aos="fade-up"
+                data-aos-delay="200"
               >
                 كيف تبدأ
               </Link>
               <Link
                 href="#"
                 className="text-text hover:text-secondary transition"
+                data-aos="fade-up"
+                data-aos-delay="300"
               >
                 الاسئلة الشائعة
               </Link>
               <Link
                 href="#"
                 className="text-text hover:text-secondary transition"
+                data-aos="fade-up"
+                data-aos-delay="400"
               >
                 تسجيل دخول
               </Link>

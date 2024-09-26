@@ -32,10 +32,10 @@ export default function Button({
 
   return (
     <button
-      className={`${baseStyles} font-medium rounded ${className} ${variantStyles} h-[40px]`}
+      className={`flex items-center justify-center  ${baseStyles} font-medium rounded ${className} ${variantStyles} h-[40px]`}
       onClick={onClick}
     >
-      {children}
+      <p className="-mt-2">{children}</p>
     </button>
   );
 }
