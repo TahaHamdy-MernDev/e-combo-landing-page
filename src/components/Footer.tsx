@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 py-10 bg-[#172B4D] text-white">
+    <footer className="mt-20 py-10 bg-[#172B4D] text-white overflow-hidden">
       <div className="container">
         <Image
           src={"/images/footer-logo.png"}

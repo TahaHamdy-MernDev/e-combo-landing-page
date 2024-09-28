@@ -104,4 +104,7 @@ a {
   body {
     @apply bg-background text-foreground;
   }
+  img{
+    @apply max-h-full max-w-full
+  }
 }

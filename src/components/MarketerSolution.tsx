@@ -33,7 +33,7 @@ export default function MarketerSolution() {
   ];
 
   return (
-    <section className="py-10" id="marketer-solutions" data-aos="fade-up">
+    <section className="py-10 overflow-hidden" id="marketer-solutions" data-aos="fade-up">
       <Title
         title="حلول ايكومبو للمسوق"
         description="لأن للتجارة أصول نقدم لك حلول عملية"

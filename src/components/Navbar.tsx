@@ -3,19 +3,25 @@ import { useState } from "react";
 import Image from "next/image";
 import logo from "../../public/images/Logo_Ecombo 1.png";
 import Link from "next/link";
-import Button from "./ui/Button";
-
-const Navbar = () => {
+import { Button } from "./ui/Button";
+interface NavbarProps {
+  isSticky: boolean;
+}
+export default function Navbar({ isSticky }: Readonly<NavbarProps>) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="bg-white shadow-md fixed top-0 w-full z-50">
-      <div className="container mx-auto flex justify-between items-center p-4">
+    <nav
+      className={`bg-white shadow-md w-full z-50 h-20 transition-all duration-300 ${
+        isSticky ? "fixed top-0 left-0" : "relative"
+      }`}
+    >
+      <div className="container mx-auto flex justify-between items-center p-5">
         {/* Logo */}
-        <div className="flex items-center" data-aos="fade-down">
+        <div className="flex items-center" data-aos="fade-up">
           <Image src={logo} alt="ايكومبو" width={150} height={60} />
         </div>
 
@@ -24,7 +30,7 @@ const Navbar = () => {
           className="md:hidden cursor-pointer"
           onClick={toggleSidebar}
           aria-label="Toggle sidebar"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-delay="100"
         >
           <svg
@@ -47,7 +53,7 @@ const Navbar = () => {
           <Link
             href="#about"
             className="text-textBase text-xl hover:text-secondary transition"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-delay="200"
           >
             عن ايكومبو
@@ -55,7 +61,7 @@ const Navbar = () => {
           <Link
             href="#why"
             className="text-textBase text-xl hover:text-secondary transition"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-delay="300"
           >
             لماذا ايكومبو
@@ -63,7 +69,7 @@ const Navbar = () => {
           <Link
             href="#how"
             className="text-textBase text-xl hover:text-secondary transition"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-delay="400"
           >
             كيف تبدأ
@@ -71,7 +77,7 @@ const Navbar = () => {
           <Link
             href="#common-questions"
             className="text-textBase text-xl hover:text-secondary transition"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-delay="500"
           >
             الاسئلة الشائعة
@@ -80,7 +86,12 @@ const Navbar = () => {
             href="#"
             className="text-textBase text-xl hover:text-secondary transition"
           >
-            <Button data-aos="fade-down" data-aos-delay="600">
+            <Button
+              variant={"secondary"}
+              className="w-36"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               تسجيل دخول
             </Button>
           </Link>
@@ -89,10 +100,9 @@ const Navbar = () => {
 
       {/* Sidebar for Mobile */}
       {isOpen && (
-        <div
+        <button
           className="fixed inset-0 z-30 bg-black bg-opacity-50"
           onClick={toggleSidebar}
-          role="button"
           tabIndex={0}
           aria-label="Close sidebar"
           onKeyDown={(e) => {
@@ -167,10 +177,8 @@ const Navbar = () => {
               </Link>
             </nav>
           </div>
-        </div>
+        </button>
       )}
-    </div>
+    </nav>
   );
-};
-
-export default Navbar;
+}

@@ -1,14 +1,16 @@
 import React from "react";
 import Title from "./ui/Title";
+import MapComponent from "./Map";
 // WEBSITE :: https://www.mapchart.net/world.html
 export default function Where() {
   return (
-    <section className="my-10">
+    <section className="my-10 overflow-hidden">
       <Title
         title="أين ايكومبو ؟"
         description="ايكومبو بيوجد في أكثر من دولة"
       />
-      <div className="container my-5">
+      <MapComponent/>
+      {/* <div className="container my-5">
         <div className="min-h-[450px] bg-cover bg-center bg-no-repeat rounded-lg relative">
           <div
             className="absolute inset-0 bg-black bg-opacity-50 z-10 rounded-lg"
@@ -60,7 +62,7 @@ export default function Where() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -9,7 +9,7 @@ import {
 
 export default function CommonQuestions() {
   return (
-    <section className="py-10" id="common-questions">
+    <section className="py-10 overflow-hidden" id="common-questions">
       <Title title="الأسئلة الشائعة" />
       <div className="container mt-5">
         <div className="md:w-2/3 mx-auto">

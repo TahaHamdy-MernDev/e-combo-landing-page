@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-const abeeZee = localFont({
+const din = localFont({
   src: "./fonts/DINNextLTArabic-Regular.ttf",
-  variable: "--font-abee-zee",
-  weight: "400",
+  variable: "--font-din",
+  weight: "400 500",
 });
-
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ecompo.com"),
@@ -57,7 +56,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#59C6C9" />
         <meta name="robots" content="index, follow" />
       </head>
-      <body className={`${abeeZee.variable} antialiased`}>{children}</body>
+      <body className={`${din.variable} ${din.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

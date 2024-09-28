@@ -21,7 +21,7 @@ export default function SupplierSolution() {
     },
   ];
   return (
-    <section className="py-10">
+    <section className="py-10 overflow-hidden">
     <Title
       title="حلول ايكومبو للمورد"
       description="لأن للتجارة أصول نقدم لك حلول عملية"

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Why() {
   return (
-    <section className="py-10" id="why" data-aos="fade-up">
+    <section className="py-10 overflow-hidden" id="why" data-aos="fade-up">
       <Title
         title="لماذا ايكومبو ؟"
         titleColor="text-primary"

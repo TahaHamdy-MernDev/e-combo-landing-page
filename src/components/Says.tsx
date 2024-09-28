@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Says() {
   return (
-    <section className="py-10">
+    <section className="py-10 overflow-hidden">
     <Title
       title="ماذا قالوا عنا؟"
       description="ايكومبو هي شركة ناشئة رائدة وهناك الكثير من تكلم عن نجاحاتنا"

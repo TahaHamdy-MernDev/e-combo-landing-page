@@ -1,10 +1,10 @@
 import React from "react";
 import Title from "./ui/Title";
 import Image from "next/image";
-import Button from "./ui/Button";
+import { Button } from "./ui/Button";
 export default function About() {
   return (
-    <section className="py-10" id="about" data-aos="fade-up">
+    <section className="py-10 overflow-hidden" id="about" data-aos="fade-up">
       <Title
         title="عن ايكومبو"
         titleColor="text-primary"
@@ -39,7 +39,7 @@ export default function About() {
               </h4>
               
               <p
-                className="text-xl max-w-[70%] text-center"
+                className="text-xl md:w-[80%] text-center"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
@@ -83,7 +83,7 @@ export default function About() {
               </h4>
               
               <p
-                className="text-xl max-w-[70%] text-center"
+                className="text-xl md:w-[80%] text-center"
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
