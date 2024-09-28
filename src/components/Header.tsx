@@ -22,8 +22,7 @@ export default function Header() {
         opts={{ direction: "rtl", loop: true }}
       >
         <CarouselContent>
-          
-           <CarouselItem className="md:h-[60vh] relative overflow-hidden px-4">
+          <CarouselItem className="min-h-[50vh] md:h-[60vh] relative overflow-hidden px-4">
             <div className="rounded-lg h-full px-0">
               <span
                 className="absolute -top-[10%] md:-top-[25%] left-[75%] md:left-[45%] transform -translate-x-1/2 bg-circle w-52 h-52 rounded-full"
@@ -36,7 +35,7 @@ export default function Header() {
                 data-aos-delay="400"
               ></span>
 
-              <div className=" pt-10 md:min-h-[70vh] relative overflow-hidden  flex flex-col md:flex-row-reverse items-center justify-center md:justify-between">
+              <div className=" pt-10  md:h-[60vh]  relative overflow-hidden  flex flex-col md:flex-row-reverse items-center justify-center md:justify-between">
                 <div className="md:w-1/2 relative flex items-end justify-center">
                   <Image
                     src={"/images/header-img.png"}
@@ -68,7 +67,7 @@ export default function Header() {
                     data-aos-delay="400"
                   />
                 </div>
-                <div className="md:w-1/2 mt-8 text-center md:text-right mb-6 md:mb-0">
+                <div className="md:h-full md:w-1/2 flex flex-col items-center md:items-start justify-center mt-8 md:mt-0 text-center md:text-right mb-6 md:mb-0">
                   <h1
                     className="text-6xl md:text-7xl font-normal text-primary relative inline-block"
                     data-aos="fade-up"
@@ -104,7 +103,7 @@ export default function Header() {
                   >
                     <Button
                       variant={"secondary"}
-                      className="mt-4 z-10 relative w-1/3"
+                      className="mt-4 z-10 relative w-2/3 md:w-1/3"
                     >
                       انضم إلينا
                     </Button>
@@ -112,8 +111,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-          </CarouselItem> 
-
+          </CarouselItem>
 
           <CarouselItem className="h-[80vh] md:h-[60vh] relative overflow-hidden px-4">
             <div className="w-full h-[80vh] md:h-[60vh] px-0 flex flex-col gap-1 md:flex-row-reverse items-center justify-between">
@@ -158,8 +156,8 @@ export default function Header() {
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious  className="bg-primary text-white border-0 hover:bg-primary/10"/>
-        <CarouselNext className=" bg-primary text-white border-0 hover:bg-primary/10"/>
+        <CarouselPrevious className="bg-primary text-white border-0 hover:bg-primary/10" />
+        <CarouselNext className=" bg-primary text-white border-0 hover:bg-primary/10" />
       </Carousel>
     </header>
   );

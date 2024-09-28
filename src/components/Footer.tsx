@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <>
+    <span className=" overflow-hidden">
       <footer className="mt-20 pt-10 bg-[#172B4D] text-white overflow-hidden">
         <div className="container mb-3">
           <Image
@@ -24,84 +24,88 @@ export default function Footer() {
                 مال.
               </p>
             </div>
-            <div className="md:w-1/2 flex items-center justify-evenly md:justify-start  gap-4 ">
-              <div className="w-1/2 flex flex-col gap-3 items-center justify-start">
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                >
-                  سجل كمورد
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  سجل كمسوق
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  تواصل معنا
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  الشروط والأحكام
-                </a>
+            <div className="w-full lg:w-1/2 flex items-center justify-evenly md:justify-start  gap-4 ">
+              <div className="w-1/2 flex items-center justify-center">
+                <div className="flex flex-col gap-3 items-start justify-start">
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                  >
+                    سجل كمورد
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    سجل كمسوق
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    تواصل معنا
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    الشروط والأحكام
+                  </a>
+                </div>
               </div>
-              <div className="w-1/2 flex items-center justify-evenly md:justify-start flex-col gap-3">
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                >
-                  كيف تبدأ
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  فروعنا
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  الأسئلة الشائعة
-                </a>
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  خدماتنا
-                </a>
+              <div className="w-1/2 flex items-center justify-center">
+                <div className="flex flex-col gap-3 items-start justify-start">
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                  >
+                    كيف تبدأ
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    فروعنا
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    الأسئلة الشائعة
+                  </a>
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    خدماتنا
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="mt-4 flex items-center  justify-center md:justify-start  gap-4">
+          <div className="mt-6 flex items-center  justify-center md:justify-start  gap-4">
             <Image
               src={"/images/facebook.png"}
               alt="facebook"
@@ -128,15 +132,22 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="bg-[#172B4D] border-t-2  px-6 py-4">
+      <div
+        className="bg-[#172B4D] border-t-2  px-6 py-4"
+        data-aos="fade-up"
+        data-aos-delay={200}
+      >
         <div className="container ">
-
-        <div className="flex justify-between items-center ">
-          <p className=" text-white">E combo 2023</p>
-          <p className=" text-white">All Rights Reserved</p>
-        </div>
+          <div className="flex justify-between items-center ">
+            <p className=" text-white" data-aos="fade-up" data-aos-delay={300}>
+              E combo 2023
+            </p>
+            <p className=" text-white" data-aos="fade-up" data-aos-delay={300}>
+              All Rights Reserved
+            </p>
+          </div>
         </div>
       </div>
-    </>
+    </span>
   );
 }

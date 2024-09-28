@@ -13,7 +13,10 @@ const MapComponent: React.FC = () => {
   const activeCountries = ["Saudi Arabia", "United Arab Emirates"];
 
   return (
-    <div className="container mx-auto p-4 overflow-hidden">
+    <div className="container mx-auto p-4 overflow-hidden"
+    data-aos='fade-up'
+      data-aos-delay={200}
+    >
       <div className="w-full h-96 rounded-lg overflow-hidden">
         <ComposableMap
           projection="geoMercator"
