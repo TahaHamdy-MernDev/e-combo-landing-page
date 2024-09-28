@@ -10,10 +10,10 @@ body {
 
 body {
   font-family: var(--font-abee-zee), sans-serif;
-  @apply text-lg
+  @apply text-lg;
 }
 h1,
-h2, 
+h2,
 h3,
 h4,
 h5,
@@ -98,13 +98,25 @@ a {
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-background text-foreground;
   }
-  img{
-    @apply max-h-full max-w-full
+  img {
+    @apply max-h-full max-w-full;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
   }
 }
